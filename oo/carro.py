@@ -1,5 +1,7 @@
+
+
 """
-Você deve criar uma clsse carro que vai possuir dois atributos compostros por outras duas classes:
+Você deve criar uma clsse carro que vai possuir dois atributos compostos por outras duas classes:
 1) Motor
 2) Direção
 
@@ -15,23 +17,23 @@ A direção terá a responsabilidade de controlar a direção. Ela oferecerá os
     N
   O   L
     S
-    >>>#Testando Motor
+
     >>> motor = Motor()
     >>> motor.velocidade
     0
-    >>>motor.acelerar()
+    >>> motor.acelerar()
     >>> motor.velocidade
     1
-    >>>motor.acelerar()
+    >>> motor.acelerar()
     >>> motor.velocidade
     2
-    >>>motor.acelerar()
+    >>> motor.acelerar()
     >>> motor.velocidade
     3
-    >>>motor.frear()
+    >>> motor.frear()
     >>> motor.velocidade
     1
-    >>>motor.frear()
+    >>> motor.frear()
     >>> motor.velocidade
     0
     >>>#Testando Direção
@@ -83,3 +85,8 @@ A direção terá a responsabilidade de controlar a direção. Ela oferecerá os
     >>> carro.calcular_direcao()
     'norte'
 """
+class Motor:
+    def __init__(self):
+        self.velocidade = 0
+    def acelerar(self,velocidade):
+        return (velocidade+1)
