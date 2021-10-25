@@ -130,4 +130,8 @@ class Direcao:
     def girar_a_esquerda(self):
         self.valor = self.rotacao_a_esquerda_dct[self.valor]
 
-#if __name__ == '__main__':
+if __name__ == '__main__':
+    motor = Motor()
+    carro = Carro()
+    motor.acelerar()
+    print(carro.calcular_a_velocidade())
